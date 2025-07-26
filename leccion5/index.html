@@ -69,8 +69,27 @@
                     <code>&lt;input type="text"&gt;</code>) y un campo para el "Mensaje" (usando un
                     <code>&lt;textarea&gt;</code>). El textarea debe tener una altura inicial de 5 filas.</p>
                 <!-- Espacio para el reto del alumno -->
-
+                
             </div>
+            <form action="#">
+                  <div>
+                    <label for="asunto">Asunto:</label>
+                    <input type="text" id="asunto" name="asunto">
+                  </div>
+                  <div>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea
+                      id="mensaje"
+                      name="mensaje"
+                      rows="5"
+                      cols="50"
+                      placeholder="Escribe tu mensaje aquí..."
+                    ></textarea>
+                  </div>
+                  <div>
+                    <button type="submit">Enviar</button>
+                  </div>
+                </form>
         </div>
         <div class="nav-links">
             <a href="../index.html">Volver al Menú Principal</a>
