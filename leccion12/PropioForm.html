@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<form action="/pedir-pizza" method="POST">
+    <h2>Formulario de Pedido de Pizza</h2>
+    
+    <fieldset>
+        <legend>CONTACTO</legend>
+        <div>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre completo">
+        </div>
+        <div>
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required placeholder="Tu número de teléfono">
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="tu@email.com">
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>TIPO DE PIZZA</legend>
+        <div>
+            <label for="tamano">TAMAÑO:</label>
+            <select id="tamano" name="tamano" required>
+                
+                <option value="pequena">Pequeña (4 porciones)</option>
+                <option value="mediana">Mediana (8 porciones)</option>
+                <option value="grande">Grande (12 porciones)</option>
+                <option value="familiar">Familiar (16 porciones)</option>
+            </select>
+        </div>
+
+        <div>
+            <p>Tipo de Masa:</p>
+            <input type="radio" id="delgada" name="masa" value="delgada" required>
+            <label for="delgada">Masa Delgada</label>
+            <br>
+            <input type="radio" id="gruesa" name="masa" value="gruesa">
+            <label for="gruesa">Masa Gruesa</label>
+        </div>
+
+        <div>
+            <p>Ingredientes Adicionales:</p>
+            <input type="checkbox" id="champinones" name="ingredientes" value="champinones">
+            <label for="champinones">Champiñones</label>
+            <br>
+            <input type="checkbox" id="jamon" name="ingredientes" value="jamon">
+            <label for="jamon">Jamón</label>
+            <br>
+            <input type="checkbox" id="pina" name="ingredientes" value="pina">
+            <label for="pina">Piña</label>
+            <br>
+            <input type="checkbox" id="aceitunas" name="ingredientes" value="aceitunas">
+            <label for="aceitunas">Aceitunas</label>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>Detalles de la Entrega</legend>
+        <div>
+            <label for="direccion">Dirección de Entrega:</label>
+            <textarea id="direccion" name="direccion" rows="3" required 
+                      placeholder="Ingresa tu dirección completa"></textarea>
+        </div>
+        <div>
+            <label for="hora">Hora de Entrega:</label>
+            <input type="time" id="hora" name="hora" required>
+        </div>
+    </fieldset>
+
+    <div class="botones">
+        <button type="submit">Hacer Pedido</button>
+        <button type="reset">Limpiar Formulario</button>
+    </div>
+</form>
+
+
+</body>
+</html>
